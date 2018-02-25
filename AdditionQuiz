@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class addition_quiz {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int a1 = input.nextInt();
+		int a2 = input.nextInt();
+		int a3 = input.nextInt();
+		int a4 = input.nextInt();
+		int a5 = input.nextInt();
+
+		int q11 = (int)(Math.random()*100);
+		int q12 = (int)(Math.random()*100);
+		System.out.print(q11+" + "+q12+" =");
+			if (a1 == (q11+q12)) {
+				System.out.println("Correct!");
+			}
+			else {
+				System.out.println("Incorrect.");
+			}
+		
+		int q21 = (int)(Math.random()*100);
+		int q22 = (int)(Math.random()*100);
+			if (a2 == (q21+q22)) {
+				System.out.println("Correct!");
+			}
+			else {
+				System.out.println("Incorrect.");
+			}
+		
+		int q31 = (int)(Math.random()*100);
+		int q32 = (int)(Math.random()*100);
+			if (a3 == (q31+q32)) {
+				System.out.println("Correct!");
+			}
+		
+		int q41 = (int)(Math.random()*100);
+		int q42 = (int)(Math.random()*100);
+		int q51 = (int)(Math.random()*100);
+		int q52 = (int)(Math.random()*100);
+		
+		
+		
+	}
+
+}
