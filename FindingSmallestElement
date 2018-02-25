@@ -1,0 +1,18 @@
+public class finding_the_smallest_element {
+
+	public static void main(String[] args) {
+		int smallest = 0;
+		int ten[] = new int[10];
+		for (int i=0; i<10; i++) {
+			ten[i] = (int)(Math.random()*10);
+		}
+		for (int i=0; i<10; i++) {
+			if (ten[i]>smallest) {
+				smallest = ten[i];
+			}
+		}
+		System.out.print(smallest);
+		
+	}
+
+}
