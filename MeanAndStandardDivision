@@ -1,0 +1,15 @@
+public class mean_and_standard_deviation {
+
+	public static void main(String[] args) {
+		int sum = 0;
+		double sigma = 0;
+		int a[] = new int[10];
+		for(int i=0; i<10; i++) a[i] = (int)(Math.random()*10);
+		for(int i=0; i<10; i++) sum = sum + a[i];
+		System.out.println("The mean of the numbers is "+sum/10.00);
+		
+		for(int i=0; i<10; i++) sigma = sigma+Math.sqrt(((a[i]-(sum/10.00))*(a[i]-(sum/10.00)))/9);
+		System.out.println("The standard deviation of the numbers is "+sigma);
+	}
+
+}
